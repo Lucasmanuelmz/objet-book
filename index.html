@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book library</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Library</h1>
+        <form>
+            <label for="title">Title:</label><br />
+            <input class="input-type" placeholder="Title of book" type="text" id="title" required><br />
+        
+            <label for="author">Author:</label><br />
+            <input class="input-type" placeholder="Author of book" type="text" id="author" required><br />
+        
+            <label for="pages">Pages:</label><br />
+            <input class="input-type" type="number" id="pages" required>
+        
+            <label for="read">You are reading now? <span>yes/no</span></label>
+            <input type="checkbox" id="read">
+        
+            <button type="button" id="add-book">Add Book</button>
+            <p></p>
+          </form>
+        
+        <div class="container-table">
+        <table>
+            <thead>             
+            </thead>            
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    </div>
+    <script src="./scripts/index.js"></script>
+</body>
+</html>

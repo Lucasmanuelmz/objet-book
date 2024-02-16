@@ -1,0 +1,99 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    margin: 20px auto;
+    width: 50%;
+}
+
+.container > h1 {
+    text-align: center;
+}
+
+form {
+    width: 400px;
+    height: auto;
+    padding: 25px;
+    background-color: #fff000;
+    margin: auto;
+    border-radius: 34px;
+    box-shadow: 6px 6px 10px #ddd;
+}
+
+[class="input-type"] {
+    width: 400px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: .5 solid #ddd;
+    border-radius: 14px;
+    font-size: 18px;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    background-color: #f0f0f0;
+    font-size: 18px;
+    color: #222;
+    border: none;
+    border-radius: 19px;
+    display: block;
+    margin-top: 25px;
+    box-shadow: 2px 2px 4px 3px #666;
+    cursor: pointer;
+}
+
+/*button:hover {
+    background-color: #645435;
+    transition: 800ms;
+}
+*/
+button:active {
+    background-color: #f00;
+    color: #fff;
+}
+
+label {
+    font-size: 18px;
+    
+}
+
+
+table,
+th,
+td {
+    border: 1px #666 solid;
+}
+
+tr:nth-child(even) {
+    background-color: gray;
+    color: white;
+}
+
+th {
+    width: 200px;
+    background-color: #645435;
+    color: #f0f0f0;
+}
+
+td {
+    text-align: center;
+}
+
+table {
+    display: none;
+    border-spacing: 0;
+    margin-top: 16px;
+}
+
+.pages, 
+.check {
+    width: 90px;
+}
+
+.title {
+    width: 350px;
+}
