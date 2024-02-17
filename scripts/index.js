@@ -1,5 +1,16 @@
+let formDialog = document.querySelector('#form-dialog');
+let cancelButton = document.querySelector('#cancel');
+let dialogButton = document.querySelector('#menu-button');
 let button = document.querySelector('#add-book');
 let table = document.querySelector('table');
+
+dialogButton.addEventListener('click', () => {
+    formDialog.showModal();
+})
+
+cancelButton.addEventListener('click', () => {
+    formDialog.close();
+})
 
 const myLibrary = [];
 
@@ -30,6 +41,28 @@ Book.prototype.Library = function() {
     tdRead.textContent = this.read;
     tr.appendChild(tdRead);
 
+    let tdDelete = document.createElement('td');
+    let deleteButton = document.createElement('button');
+    tdDelete.appendChild(deleteButton);
+    deleteButton.classList.add('delete');
+    deleteButton.innerHTML= `<img src="../assets/icons/delete-custom.png"/>`;
+    deleteButton.title = 'Click do delete';
+    tr.appendChild(tdDelete);
+    deleteButton.style.cssText = `
+    font-size: 14px; 
+    border-radius: 4px;
+    padding: 2px;
+    width: max-content;
+    height: fit-content;
+    margin: 0 auto;
+    box-shadow: 1px 1px 1px #ddd;`;
+
+    function deleteItem() {
+        tr.parentNode.removeChild(tr);
+    }
+
+    deleteButton.addEventListener('click', deleteItem);
+
     return myLibrary;
 }
  
@@ -48,7 +81,7 @@ Book.prototype.Library = function() {
     thPages.classList.add('pages');
     trhead.appendChild(thPages);
     let thRead = document.createElement('th');
-    thRead.textContent = 'Reading';
+    thRead.textContent = 'Reading?';
     thRead.classList.add('check');
     trhead.appendChild(thRead);
 

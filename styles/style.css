@@ -1,6 +1,12 @@
 body {
-    background-color: #f0f0f0;
+    background-color: #bae6fd;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+@font-face {
+    font-family: 'AkayaTelivigala-Regular';
+    src: url(../fonts/Akaya_Telivigala/AkayaTelivigala-Regular.ttf);
 }
 
 .container {
@@ -10,16 +16,18 @@ body {
 
 .container > h1 {
     text-align: center;
+    font-family: 'AkayaTelivigala-Regular' ;
+    font-size: 42px;
+    font-weight: 500;
+    color: #f05;
 }
 
-form {
-    width: 400px;
-    height: auto;
-    padding: 25px;
-    background-color: #fff000;
-    margin: auto;
-    border-radius: 34px;
-    box-shadow: 6px 6px 10px #ddd;
+#form-dialog {
+    border: .3px solid #38bdf8;
+    border-radius: 20px;
+    background-color: #7dd3fc;
+    font-family: 'AkayaTelivigala-Regular';
+    box-shadow: 3px 3px 3px #0284c7;
 }
 
 [class="input-type"] {
@@ -30,35 +38,53 @@ form {
     border: .5 solid #ddd;
     border-radius: 14px;
     font-size: 18px;
+    font-family: 'AkayaTelivigala-Regular';
+    background-color: #f0f9ff;
 }
 
 button {
     width: 100px;
     height: 40px;
-    background-color: #f0f0f0;
+    background-color: #0284c7;
     font-size: 18px;
-    color: #222;
+    color: #fffff0;
     border: none;
     border-radius: 19px;
-    display: block;
     margin-top: 25px;
-    box-shadow: 2px 2px 4px 3px #666;
+    margin-right: 30px;
+    box-shadow: 2px 2px 2px #0ea5e9;
     cursor: pointer;
+    font-family: 'AkayaTelivigala-Regular';
 }
 
-/*button:hover {
-    background-color: #645435;
+button:hover {
+    background-color: #0c4a6e;
     transition: 800ms;
 }
-*/
+
+
 button:active {
-    background-color: #f00;
-    color: #fff;
+    background-color: #0c4a6e;
+    color: #FFf ;
 }
 
 label {
     font-size: 18px;
     
+}
+
+#menu-button {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    width: max-content;
+    border-radius: 15px;
+    padding: 10px 20px;
+    background-color: #0284c7;
+    font-size: 14px;
+    margin: 0;
+    box-shadow: 4px 4px 4px #60a5fa;
+    color: #fffff0;
 }
 
 
@@ -69,14 +95,14 @@ td {
 }
 
 tr:nth-child(even) {
-    background-color: gray;
-    color: white;
+    background-color: #7dd3fc;
+    color:#F43523;
 }
 
 th {
     width: 200px;
-    background-color: #645435;
-    color: #f0f0f0;
+    background-color: #0c4a6e;
+    color: #fffff0;
 }
 
 td {
@@ -87,6 +113,7 @@ table {
     display: none;
     border-spacing: 0;
     margin-top: 16px;
+    font-family: 'AkayaTelivigala-Regular';
 }
 
 .pages, 
@@ -96,4 +123,8 @@ table {
 
 .title {
     width: 350px;
+}
+
+.delete {
+    background-color: #7dd3fc;
 }
