@@ -45,7 +45,7 @@ Book.prototype.Library = function() {
     let deleteButton = document.createElement('button');
     tdDelete.appendChild(deleteButton);
     deleteButton.classList.add('delete');
-    deleteButton.innerHTML= `<img src="../assets-icon/icons/delete-custom.png"/>`;
+    deleteButton.innerHTML= `<img src="/assets-icon/icons/delete-custom.png"/>`;
     deleteButton.title = 'Click do delete';
     tr.appendChild(tdDelete);
     deleteButton.style.cssText = `
