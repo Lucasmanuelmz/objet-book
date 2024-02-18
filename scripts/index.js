@@ -3,6 +3,7 @@ let cancelButton = document.querySelector('#cancel');
 let dialogButton = document.querySelector('#menu-button');
 let button = document.querySelector('#add-book');
 let table = document.querySelector('table');
+let validForm = document.querySelector('#submit-form');
 
 dialogButton.addEventListener('click', () => {
     formDialog.showModal();
@@ -85,6 +86,8 @@ Book.prototype.Library = function() {
     thRead.classList.add('check');
     trhead.appendChild(thRead);
 
+//Reselvei um bug para corrigí-lo depois de mergulhar fundo no js.
+ let p = document.querySelector('p');
 
 function addBookToLibrary() {
 
@@ -92,8 +95,8 @@ function addBookToLibrary() {
     let author = document.querySelector('#author').value;
     let pages = document.querySelector('#pages').value;
     let read = document.querySelector('#read').checked? 'Yes':'No';
-    let p = document.querySelector('p');
-
+   
+    
     if(title !== '' && isNaN(title) 
     && author !== '' && isNaN(author)
     && pages !== '' && !isNaN(pages) ) {
@@ -101,6 +104,7 @@ function addBookToLibrary() {
     myBook.Library()
 
     table.style.display = 'table';
+    
     } else { 
         if(title === '' || !isNaN(title)) {
             p.textContent = 'Fill in the title with text and do not use numbers!';
@@ -124,7 +128,7 @@ function addBookToLibrary() {
             p.style.padding = '5px';
         }
     }
-    
+
 }
 
 button.addEventListener('click', addBookToLibrary);
