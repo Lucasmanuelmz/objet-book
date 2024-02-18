@@ -1,3 +1,7 @@
+:root {
+    --colorBackground: #0284c7;
+    --boxShadowColor: #0c4a6e;
+}
 body {
     background-color: #bae6fd;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -27,7 +31,7 @@ body {
     border-radius: 20px;
     background-color: #7dd3fc;
     font-family: 'AkayaTelivigala-Regular';
-    box-shadow: 3px 3px 3px #0284c7;
+    box-shadow: 3px 3px 3px var(--colorBackground);
 }
 
 [class="input-type"] {
@@ -45,7 +49,7 @@ body {
 button {
     width: 100px;
     height: 40px;
-    background-color: #0284c7;
+    background-color: var(--colorBackground);
     font-size: 18px;
     color: #fffff0;
     border: none;
@@ -58,13 +62,13 @@ button {
 }
 
 button:hover {
-    background-color: #0c4a6e;
+    background-color: var(--boxShadowColor);
     transition: 800ms;
 }
 
 
 button:active {
-    background-color: #0c4a6e;
+    background-color: var(--boxShadowColor);
     color: #FFf ;
 }
 
@@ -80,7 +84,7 @@ label {
     width: max-content;
     border-radius: 15px;
     padding: 10px 20px;
-    background-color: #0284c7;
+    background-color: var(--colorBackground);
     font-size: 14px;
     margin: 0;
     box-shadow: 4px 4px 4px #60a5fa;
@@ -88,7 +92,7 @@ label {
 }
 
 #menu-button:hover {
-    background-color: #0c4a6e;
+    background-color: var(--boxShadowColor);
 }
 
 
@@ -105,7 +109,7 @@ tr:nth-child(even) {
 
 th {
     width: 200px;
-    background-color: #0c4a6e;
+    background-color: var(--boxShadowColor);
     color: #fffff0;
 }
 
