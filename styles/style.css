@@ -87,6 +87,10 @@ label {
     color: #fffff0;
 }
 
+#menu-button:hover {
+    background-color: #0c4a6e;
+}
+
 
 table,
 th,
@@ -96,7 +100,7 @@ td {
 
 tr:nth-child(even) {
     background-color: #7dd3fc;
-    color:#F43523;
+    color:#8f1308;
 }
 
 th {
